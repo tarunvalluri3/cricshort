@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+/* Design Tokens */
+@theme {
+  --color-bg: #FFFFFF;            /* 60% */
+  --color-text-primary: #111111;  /* strong black */
+  --color-text-secondary: #6B7280; 
+  --color-accent: #F97316;        /* orange */
+}
+
+/* Base */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: system-ui, sans-serif;
+  color: var(--color-text-primary);
+}
+
+/* Typography */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
