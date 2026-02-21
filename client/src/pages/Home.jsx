@@ -18,7 +18,7 @@ const Home = () => {
     const fetchLastMatch = async () => {
       try {
         const res = await fetch(
-          "http://localhost:5000/api/matches"
+          import.meta.env.VITE_API_URL + "/api/matches"
         );
         const data = await res.json();
 
